@@ -1,0 +1,267 @@
+@import "tailwindcss";
+
+@tailwind utilities;
+
+@theme {
+  --color-primary: #09131b;
+  --font-primaryFont: "Roboto", system-ui, sans-serif;
+  --color-code-thumb: #666b7a;
+  --color-code-track: #1d1e22;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bg-pulse-js {
+  0%,
+  80% {
+    background-color: #fcd34d;
+  }
+  2% {
+    background-color: #fde68a;
+  }
+}
+
+@keyframes bg-pulse-react {
+  0%,
+  98% {
+    background-color: #da93e2;
+  }
+  90% {
+    background-color: #cd70d6;
+  }
+  2% {
+    background-color: #cd70d6;
+  }
+}
+
+@keyframes bg-pulse-css {
+  0%,
+  98% {
+    background-color: #f57f54;
+  }
+  70% {
+    background-color: #f66029;
+  }
+  2% {
+    background-color: #f66029;
+  }
+}
+
+@keyframes bg-pulse-post {
+  0%,
+  98% {
+    background-color: #60e2aa;
+  }
+  50% {
+    background-color: #26a56e;
+  }
+  2% {
+    background-color: #26a56e;
+  }
+}
+
+@keyframes bg-pulse-node {
+  0%,
+  98% {
+    background-color: #f98b8b;
+  }
+  70% {
+    background-color: #f87171;
+  }
+  2% {
+    background-color: #f87171;
+  }
+}
+
+@keyframes bg-pulse-mongo {
+  0%,
+  98% {
+    background-color: #468a9a;
+  }
+  70% {
+    background-color: #5eb7cc;
+  }
+  2% {
+    background-color: #5eb7cc;
+  }
+}
+
+@keyframes bg-pulse-java {
+  0%,
+  98% {
+    background-color: #e9dddd;
+  }
+  80% {
+    background-color: #ffffff;
+  }
+  2% {
+    background-color: #ffffff;
+  }
+}
+
+@keyframes bg-pulse-ts {
+  0%,
+  98% {
+    background-color: #da93e2;
+  }
+  40% {
+    background-color: #cd70d6;
+  }
+  2% {
+    background-color: #cd70d6;
+  }
+}
+
+@keyframes bg-pulse-next {
+  0%,
+  98% {
+    background-color: #bf8484;
+  }
+  66% {
+    background-color: #fecaca;
+  }
+  2% {
+    background-color: #fecaca;
+  }
+}
+
+@keyframes bg-pulse-nest {
+  0%,
+  98% {
+    background-color: #8f9cf3;
+  }
+  80% {
+    background-color: #596ced;
+  }
+  2% {
+    background-color: #596ced;
+  }
+}
+
+@keyframes bg-pulse-sass {
+  0%,
+  98% {
+    background-color: #5ee0fd;
+  }
+  90% {
+    background-color: #5eb7cc;
+  }
+  2% {
+    background-color: #5eb7cc;
+  }
+}
+@keyframes bg-pulse-html {
+  0%,
+  98% {
+    background-color: #68ff9f;
+  }
+  40% {
+    background-color: #4ade80;
+  }
+  2% {
+    background-color: #4ade80;
+  }
+}
+
+@layer utilities {
+  .animate-bg-pulse-js {
+    animation: bg-pulse-js 2s ease-in-out infinite;
+  }
+}
+@layer utilities {
+  .animate-bg-pulse-react {
+    animation: bg-pulse-react 1.2s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  .animate-bg-pulse-css {
+    animation: bg-pulse-css 1s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  .animate-bg-pulse-post {
+    animation: bg-pulse-post 1.7s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  .animate-bg-pulse-node {
+    animation: bg-pulse-node 1.4s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  .animate-bg-pulse-mongo {
+    animation: bg-pulse-mongo 2.2s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  .animate-bg-pulse-java {
+    animation: bg-pulse-java 1.3s ease-in-out infinite;
+  }
+}
+@layer utilities {
+  .animate-bg-pulse-ts {
+    animation: bg-pulse-ts 2s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  .animate-bg-pulse-next {
+    animation: bg-pulse-next 2.4s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  .animate-bg-pulse-nest {
+    animation: bg-pulse-nest 1.45s ease-in-out infinite;
+  }
+}
+@layer utilities {
+  .animate-bg-pulse-sass {
+    animation: bg-pulse-sass 1.9s ease-in-out infinite;
+  }
+}
+@layer utilities {
+  .animate-bg-pulse-html {
+    animation: bg-pulse-html 2.6s ease-in-out infinite;
+  }
+}
+
+@layer base {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    scroll-behavior: smooth;
+  }
+  * {
+    box-sizing: border-box;
+  }
+}
+html {
+  width: 100%;
+}
+
+.nav ul li:hover {
+  opacity: 0.8;
+}
